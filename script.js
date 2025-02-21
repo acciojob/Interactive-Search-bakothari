@@ -1,9 +1,10 @@
-//your JS code here. If required.
-let searchDiv = document.querySelector(".search");
 let button = document.querySelector(".btn");
-let input = document.querySelector(".input");
+    let input = document.querySelector(".input");
+    let searchDiv = document.querySelector(".search");
 
-button.addEventListener("click", () => {
-    searchDiv.classList.add("active");
-    input.focus();
-});
+    if (button && input && searchDiv) {
+        button.addEventListener("click", () => {
+            searchDiv.classList.add("active");
+            input.focus();
+        });
+    }
